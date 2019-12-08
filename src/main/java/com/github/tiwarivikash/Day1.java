@@ -9,12 +9,12 @@ import java.util.List;
 public class Day1 {
 
     //    Problem 1
-    private static final long calculateFuelRequirement(long mass) {
+    private static long calculateFuelRequirement(long mass) {
         return Math.floorDiv(mass, 3) - 2;
     }
 
     //    Problem 2
-    private static final long calculateTotalFuelRequirement(long mass, long result) {
+    private static long calculateTotalFuelRequirement(long mass, long result) {
         long fuelRequirement = calculateFuelRequirement(mass);
         if (fuelRequirement <= 0) {
             return result;
